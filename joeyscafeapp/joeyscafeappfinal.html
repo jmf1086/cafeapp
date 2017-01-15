@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>newcafeapp</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="page">
+  <div data-role="header" data-theme="a">
+    <h1>Joey's Cafe</h1>
+  </div>
+  <div data-role="content">
+    <ul data-count-theme="b" data-role="listview" data-split-theme="b" data-theme="b">
+      <li><a href="#Menu">Menu</a></li>
+      <li><a href="#AboutUs">About Us</a></li>
+      <li><a href="#Staff">Staff</a></li>
+    </ul>
+  </div>
+</div>
+<div data-role="page" id="Menu" data-add-back-btn="true" data-transition="slide" data-back-btn-text="go back">
+  <div data-role="header" data-theme="a" >
+    <h1>Menu</h1>
+  </div>
+  <div data-role="content">Content</div>
+</div>
+<div id="AboutUs" data-add-back-btn="true" data-role="page" data-theme="b" data-transition="slide" data-back-btn-text="go back">
+  <div data-role="header" data-theme="a">
+    <h1>About Us</h1>
+  </div>
+  <div data-role="content">Content</div>
+</div>
+<div data-role="page" id="Staff" data-add-back-btn="true" data-transition="slide" data-back-btn-text="go back">
+  <div data-role="header" data-theme="a">
+    <h1>Staff</h1>
+  </div>
+  <div data-role="content">Content</div>
+</div>	
