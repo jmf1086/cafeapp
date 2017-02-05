@@ -25,6 +25,8 @@
             <li><a href="#aboutus">About Us</a></li>
 			<li><a href="#staff">Staff</a></li>
 			<li><a href="#vote">Vote</a></li>
+			<li><a href="#comments">Comments</a></li>
+			
 		</ul>		
 	</div>
 	<div data-role="footer" data-theme="b">
@@ -46,14 +48,74 @@
   </div>
   <div data-role="content">
     <p>Contact info and stories about the cafe will go here</p>
-    <form id="form1" name="Comments Form" method="post" action="mailto:email@email.com" enctype="text/plain">
-    <div class="ui-field-contain">
-    <p>Comments/suggestions/feedback</p>
-    	<input id="name" name="name"type="text" placeholder="Name" data-mini="true">
-    	<textarea cols="50" rows="8" placeholder="Comments" name="comments" id="comments" data-mini="true"></textarea>
-    	<input id="email" name="email" type="email" placeholder="E-Mail" data-mini="true" >
-   		<input type="submit" id="submit1" value="Send" data-mini="true">
-     </div>
+    <p>&nbsp;</p>
+  </div>
+  <div data-role="footer">
+    <h4>&copy;</h4>
+  </div>
+</div>
+<div data-role="page" id="comments" data-add-back-btn="true" data-transition="slide">
+  <div data-role="header">
+    <h1>Comments</h1>
+  </div>
+  <div data-role="content">
+    <table width="400" border="1">
+      <tbody>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <form id="InsertCommentsForum" name="InsertCommentsForum" method="post">
+      <table width="500" border="1">
+        <tbody>
+          <tr>
+            <td>&nbsp;            <div data-role="fieldcontain">
+              <label for="textinput">Name:</label>
+              <input name="textinput" type="text" id="textinput" form="InsertCommentsForum" value=""  />
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;
+              <div data-role="fieldcontain">
+                <label for="textinput2">Email:</label>
+                <input name="textinput2" type="text" id="textinput2" form="InsertCommentsForum" value=""  />
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;
+              <div data-role="fieldcontain">
+                <label for="textarea">Comments:</label>
+                <textarea name="textarea" cols="40" rows="8" id="textarea" form="InsertCommentsForum"></textarea>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input type="submit" name="submit" id="submit" value="Submit"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table width="500" border="1">
+        <tbody>
+          <tr>
+            <td>Latest Comments</td>
+          </tr>
+          <tr>
+            <td>Posters Name:</td>
+          </tr>
+          <tr>
+            <td>Comments:</td>
+          </tr>
+          <tr>
+            <td>Posted date:</td>
+          </tr>
+        </tbody>
+      </table> 
     </form>
     <p>&nbsp;</p>
   </div>
